@@ -1,0 +1,39 @@
+# примеры API-запросов
+
+@baseUrl = https://localhost:8000
+
+# Группы
+GET {{baseUrl}}/group/
+Content-Type: application/json
+
+###
+
+# студенты
+POST {{baseUrl}}/student/
+Content-Type: application/json
+
+
+{
+  "title": "Шкаф IKEA",
+  "description": "Срочно"
+}
+
+###
+
+# Уроки
+PATCH {{baseUrl}}/advertisements/1/
+Content-Type: application/json
+
+
+{
+  "status": "CLOSED"
+}
+
+###
+
+# продукты
+GET {{baseUrl}}/advertisements/?creator=3
+Content-Type: application/json
+
+###
+
